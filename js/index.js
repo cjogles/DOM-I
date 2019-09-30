@@ -36,7 +36,64 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
-
+let sheet = document.styleSheets[0];
+//console.log(sheet);
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let circleImg = document.getElementById("cta-img");
+circleImg.setAttribute('src', siteContent.cta["img-src"]);
+
+let rectangleImg = document.getElementById("middle-img");
+rectangleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let anchorList = document.getElementsByTagName("a");
+//console.log(anchorList);
+anchorList[0].textContent = siteContent["nav"]["nav-item-1"];
+anchorList[1].textContent = siteContent["nav"]["nav-item-2"];
+anchorList[2].textContent = siteContent["nav"]["nav-item-3"];
+anchorList[3].textContent = siteContent["nav"]["nav-item-4"];
+anchorList[4].textContent = siteContent["nav"]["nav-item-5"];
+anchorList[5].textContent = siteContent["nav"]["nav-item-6"];
+
+const headSpot = document.querySelector("h1");
+//console.log(typeof headSpot);
+headSpot.textContent = siteContent.cta["h1"];
+//headSpot.style.columnCount = 3;
+//sheet.insertRule("h1 {word-spacing: <parent-width>}");
+const butt = document.querySelector("button");
+butt.textContent = siteContent["cta"]["button"];
+//console.log(typeof null);
+const topH4s = document.querySelectorAll("h4");
+console.log(topH4s);
+topH4s.innerHTML = siteContent["main-content"]["1-h4"];
+
+
+// NODE LIST EXAMPLE HOWWWWW!!???
+// let anchorList = document.querySelectorAll('a');
+// console.log(anchorList);
+// anchorList.forEach((element, i) => {
+//   //let j = i;
+//   //(function () {
+//     //console.log(element);
+//     if (element[i] === element[0]) {
+//       element[i].textContent = siteContent["nav"]["nav-item-1"];
+//     }
+//     else if (element[i] === element[1]) {
+//       element[i].textContent = siteContent["nav"]["nav-item-2"];
+//     }
+//     else if (element[i] === element[2]) {
+//       element[i].textContent = siteContent["nav"]["nav-item-3"];
+//     }
+//     else if (element[i] === element[3]) {
+//       element[i].textContent = siteContent["nav"]["nav-item-4"];
+//     }
+//     else if (element[i] === element[4]) {
+//       element[i].textContent = siteContent["nav"]["nav-item-5"];
+//     }
+//     else if (element[i] === element[5]) {
+//       element[i].textContent = siteContent["nav"]["nav-item-6"];
+//     }
+//   //})
+// });
