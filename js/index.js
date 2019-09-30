@@ -65,9 +65,24 @@ headSpot.textContent = siteContent.cta["h1"];
 const butt = document.querySelector("button");
 butt.textContent = siteContent["cta"]["button"];
 //console.log(typeof null);
-const topH4s = document.querySelectorAll("h4");
-console.log(topH4s);
-topH4s.innerHTML = siteContent["main-content"]["1-h4"];
+const H4s = document.querySelectorAll("h4");
+H4s[0].textContent = "Features";
+H4s[1].textContent = "About";
+H4s[2].textContent = "Services";
+H4s[3].textContent = "Product";
+H4s[4].textContent = "Vision";
+H4s[5].textContent = "Contact";
+
+const pars = document.querySelectorAll("p");
+pars[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+pars[1].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+pars[2].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+pars[3].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+pars[4].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+pars[5].textContent = "123 Way 456 Street \n Somewhere, USA";
+pars[6].textContent = "1 (888) 888-8888";
+pars[7].textContent = "sales@greatidea.io";
+pars[8].textContent = "Copyright Great Idea! 2018";
 
 
 // NODE LIST EXAMPLE HOWWWWW!!???
